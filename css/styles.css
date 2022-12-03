@@ -1,12 +1,11 @@
 :root {
-	--main-text-color: rgba(67, 68, 85, 1);
-	--secondary-text-color: rgba(46, 47, 66, 1);
-	--accent-text-color: rgba(255, 255, 255, 1);
-	--logo-color: rgba(77, 90, 229, 1);
-	--footer-tex-color: rgba(231, 233, 252, 1);
+	--main-text-color: #434455;
+	--secondary-text-color: #2e2f42;
+	--accent-text-color: #fff;
+	--logo-color: #4d5ae5;
+	--footer-tex-color: #e7e9fc;
 	--main-background-color: #e5e5e5;
-	--secondary-background-color: rgba(244, 244, 253, 1);
-	--accent-background-color: rgba(46, 47, 66, 1);
+	--secondary-background-color: #f4f4fd;
 }
 
 .visually-hidden {
@@ -23,8 +22,8 @@
 }
 body {
 	font-family: "Roboto", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+	color: var(--main-text-color);
+	background-color: var(--main-background-color);
 }
 ul {
 	list-style: none;
@@ -35,7 +34,7 @@ ul {
 }
 .logo {
 	font-family: "Raleway", sans-serif;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.33;
 	letter-spacing: 0.03em;
@@ -43,14 +42,14 @@ ul {
 }
 .web {
 	font-family: "Raleway", sans-serif;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.33;
 	letter-spacing: 0.03em;
 	color: var(--logo-color);
 }
 .header-link {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -60,9 +59,11 @@ ul {
 .header-link:focus {
 	color: var(--main-text-color);
 }
+.header-link:active {
+	color: var(--logo-color);
+}
 .header-phone,
 .header-mail {
-	font-weight: inherit;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -75,19 +76,19 @@ ul {
 	color: var(--logo-color);
 }
 .hero {
-	background-color: var(--accent-background-color);
+	background-color: var(--secondary-text-color);
 }
 .hero-title {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
 	color: var(--accent-text-color);
 }
-.hero button {
+.hero-button {
 	font-family: "Roboto", sans-serif;
-	font-weight: 600;
-	font-style: inherit;
+	font-weight: 500;
+	font-style: normal;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.04em;
@@ -97,11 +98,14 @@ ul {
 	cursor: pointer;
 	border: none;
 }
-.hero button:hover {
-background-color: var(--logo-color);
+.hero-button:hover {
+	background-color: var(--logo-color);
+}
+.hero-button:active {
+	background-color: #404BBF;
 }
 .qualities-title {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -115,7 +119,7 @@ background-color: var(--logo-color);
 }
 .work-title,
 .team-title {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 36px;
 	line-height: 1.11;
 	letter-spacing: 0.02em;
@@ -123,7 +127,7 @@ background-color: var(--logo-color);
 	color: var(--secondary-text-color);
 }
 .name {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -135,10 +139,10 @@ background-color: var(--logo-color);
 	letter-spacing: 0.02em;
 	color: var(--main-text-color);
 }
-.portfolio button {
+.portfolio-button {
 	font-family: inherit;
-	font-weight: 600;
-	font-style: inherit;
+	font-weight: 500;
+	font-style: normal;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
@@ -148,13 +152,13 @@ background-color: var(--logo-color);
 	border-radius: 4px;
 	cursor: pointer;
 }
-.portfolio button:hover,
-.portfolio button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
 	color: var(--accent-text-color);
 	background: var(--logo-color);
 }
 .portfolio-title {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -177,7 +181,7 @@ background-color: var(--logo-color);
 }
 .footer > .logo {
 	font-family: "Raleway", sans-serif;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.33;
 	letter-spacing: 0.03em;
@@ -188,5 +192,5 @@ background-color: var(--logo-color);
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--footer-tex-color);
-	background: var(--accent-background-color);
+	background: var(--secondary-text-color);
 }
