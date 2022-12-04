@@ -23,7 +23,7 @@
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--main-text-color);
-	background-color: var(--main-background-color);
+	background-color: var(--accent-text-color);
 }
 ul {
 	list-style: none;
@@ -102,7 +102,7 @@ ul {
 	background-color: var(--logo-color);
 }
 .hero-button:active {
-	background-color: #404BBF;
+	background-color: #404bbf;
 }
 .qualities-title {
 	font-weight: 500;
@@ -116,6 +116,9 @@ ul {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--main-text-color);
+}
+.team {
+	background-color: var(--secondary-background-color);
 }
 .work-title,
 .team-title {
